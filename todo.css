@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background:url('img.webp') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    font-size: 50px;
+    color: #055a1c;
+  }
+  
+  header p {
+    font-size: 20px;
+    color: #1136b1;
+  }
+
+  .text,.due-date,.search-task {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+
+  .add-btn {
+    padding: 10px 20px;
+    background: #5c6bc0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  .add-btn:hover {
+    background-color: #3f51b5;
+  }
+
+  .clear-btn {
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 3px;
+
+    background: #5cc06e;
+    color: rgb(15, 6, 6);
+    cursor: pointer;
+    font-size:15px;
+    width: 120px;
+    
+    transition: background-color 0.3s ease;
+  }
+  .clear-btn:hover {
+    background-color: #0c5a19;
+  }
+
+  #search-status {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+/* js */
+  .complete-btn {
+    background: #4caf50;
+    color: white;
+  }
+  
+  .delete-btn {
+    background: #f44336;
+    color: white;
+    margin-left: 10px;
+  }
+
+  .todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+  }
+  
+  .todo-list li.completed {
+    background-color: #e8f5e9;
+    text-decoration: line-through;
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+  }
+
+.deleting{
+    animation: fadeOut 0.5s forwards; 
+}
